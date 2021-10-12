@@ -1,0 +1,48 @@
+HANDLING IMBALANCED DATA 
+Dfn:-is the significant difference in frequence of the outcome.
+    -This commonly occurs in binary classification where there are two class that one of the majority and other is minority class. 
+
+Example:
+-Fraud Detection ,where majority are non-frauds and minoirty are frauds.
+-Medical dignosisi 
+-facial recognization 
+-oil spoilage detection 
+
+
+
+WAYS OF HANDLING IMBALANCED DATA IN MACHINE LEARNING. 
+1😜️.OVERSAMPLING
+Dfn:-This refer to the process of adding of artificial data or (Duplicating the existing one) samples to the minority class to makes the dataset to be balanced.
+-A good example is SMOTE(Synthetic Minority Oversampling Technique)
+-RandomOversampler
+-ADASYN 
+
+
+
+2.UNDERSAMPLING
+Dfn:-This refer the process of removing the samples from the majority class to make the dataset balanced.
+-The common used technique is RandomUndersampler
+
+
+
+3.CUSTOM LOSS FUNCTION 
+
+
+
+4.USING CLASS WEIGHTS 
+-This is used to set the hyperparameter  for weights in algorithms to handle the imbalanced dataset 
+
+Example:
+XGBOOST - has hyperparameter called   scale_pos_weight  that is equal to the ratio of the 
+majority dataset to the minority dataset.
+
+
+
+RandomForest 
+-class_weight={0:1,1:10}
+
+
+
+
+
+
